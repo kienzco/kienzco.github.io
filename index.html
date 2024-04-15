@@ -7,21 +7,50 @@
 </head>
 <body>
     <h1>Grand Canyon</h1>
-    <button onclick="myFunction()">Isis Temple</button>
-    <div id="myDIV" style="display:none">    
+    <button onclick="isis()">Isis Temple</button>
+    <div id="isis" style="display:none">    
 	<video width="960" height="540" controls>
         <source src="isisv2.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video></div>
-
+    <button onclick="brightangel()">Bright Angel Point</button>
+    <div id="brightangel" style="display:none">    
+	<video width="960" height="540" controls>
+        <source src="brightangel.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video></div>
+    <button onclick="mather()">Mather Point</button>
+    <div id="mather" style="display:none">    
+	<video width="960" height="540" controls>
+        <source src="matherpoint.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video></div>
 
     <script>
-        function myFunction() {
-            var x = document.getElementById("myDIV");
+        function isis() {
+            var x = document.getElementById("isis");
             if (x.style.display === "none") {
                 x.style.display = "block";
             } else {
                 x.style.display = "none";
+                
+            }
+        }
+        function brightangel() {
+            var y = document.getElementById("brightangel");
+            if (y.style.display === "none") {
+                y.style.display = "block";
+            } else {
+                y.style.display = "none";
+                
+            }
+        }
+        function mather() {
+            var z = document.getElementById("mather");
+            if (z.style.display === "none") {
+                z.style.display = "block";
+            } else {
+                z.style.display = "none";
                 
             }
         }
