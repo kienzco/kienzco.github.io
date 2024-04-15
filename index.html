@@ -7,14 +7,31 @@
 </head>
 <body>
     <h1>Grand Canyon</h1>
-    <p>Behold the natural wonder of the Grand Canyon!!</p>
-    <a href="https://pixabay.com/images/search/grand%20canyon/" target="_blank">View the Image</a>
-    <video controls>
-        <source src="/vid1.mp4" type="video/mp4">
+    <video width="960" height="540" controls>
+        <source src="isis.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
+    <button onclick="myFunction()">Click Me</button>
+    <div id="myDIV">This is my DIV element.</div>
+
+
+    <script>
+        x.style.display = "none";
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+                
+            }
+        }
+    </script>
+
 </body>
+
+
 
 
 
